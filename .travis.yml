@@ -4,9 +4,9 @@ node_js:
   - 8.11.3
 services:
   - docker
+build:
+  - npm run build
 script:
-  build:
-    - npm run build
  - docker build -t mdontsov/frontend .
  - docker login -u=mdontsov -p=123456789
  - docker push mdontsov/frontend
