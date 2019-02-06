@@ -9,9 +9,3 @@ script:
  - docker login -u=mdontsov -p=123456789
  - docker push mdontsov/frontend
  
-# before_install:
-#   - docker build -t mdontsov/frontend --file ./Dockerfile .
-# install:
-#   - npm install
-# build:
-#   - npm run build
