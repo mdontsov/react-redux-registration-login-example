@@ -5,6 +5,8 @@ node_js:
 services:
   - docker
 script:
+  build:
+    - npm run build
  - docker build -t mdontsov/frontend .
  - docker login -u=mdontsov -p=123456789
  - docker push mdontsov/frontend
