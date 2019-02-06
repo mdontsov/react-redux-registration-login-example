@@ -5,11 +5,8 @@ node_js:
 services:
   - docker
 before_install:
-  - docker build -t mdontsov/react-redux-registration-login-example .
+  - docker build -t mdontsov/frontend --file ./Dockerfile .
 install:
   - npm install
 build:
   - npm run build
-script:
-  - docker images mdontsov/react-redux-registration-login-example
-  
